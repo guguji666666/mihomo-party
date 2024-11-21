@@ -181,8 +181,6 @@ interface IMihomoRuleProvider {
   type: string
   updatedAt: string
   vehicleType: string
-  url: string
-  path: string
 }
 
 interface IMihomoProxyProviders {
@@ -205,8 +203,6 @@ interface IMihomoProxyProvider {
   testUrl?: string
   updatedAt?: string
   vehicleType: string
-  url: string
-  path: string
 }
 
 interface ISysProxyConfig {

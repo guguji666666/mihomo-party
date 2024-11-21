@@ -32,7 +32,7 @@ const CopyableSettingItem: React.FC<{
       : prefix.flatMap(p =>
         (p === 'DOMAIN-SUFFIX'
           ? getSubDomains(Array.isArray(value) ? value[0] : value)
-          : p === 'IP-ASN'
+          : p === 'IP-ASN' || p === 'SRC-IP-ASN'
             ? [(Array.isArray(value) ? value[0] : value).split(' ')[0]]
             : [Array.isArray(value) ? value[0] : value]
         ).map(v => ({
